@@ -1,12 +1,3 @@
-#1. Determinar si un número es positivo o negativo
-
-def ejec_1():
-    numero = int(input("Dame un número: "))
-
-    if numero > (-1):
-        print("El número es positivo")
-    else:
-        print("El número es negativo")
 
 #2. Comparar dos números
 def ejec_2():
@@ -60,27 +51,30 @@ def ejec_6():
         res *= num
     print(f"El factorial de {numero} es {res}")
 
-#Comprobar si una cadena tiene una longitud mayor a 5
-def ejec_7():
+#13. Comprobar si una cadena tiene una longitud mayor a 5
+def ejec_13():
     cadena = input("Dame un cadena: ")
     if 5 < len(cadena):
         print("La cadena es mayor a 5 caracteres")
     else:
         print("La cadena no supera la longitud de 5 caracteres")
-#
-def ejec_8():
+#14. Escribir por pantalla cada carácter de una cadena introducida por teclado. 
+def ejec_14():
     cadena = input("Dame un cadena: ")
     for letra in range(len(cadena)):
         print(cadena[letra])
 
-def ejec_9():
+#15.Realizar un programa que comprueba si una cadena leída por teclado comienza por otra  subcadena introducida por teclado. 
+def ejec_15():
     cadena = input("Dame una cadena: ")
     subcadena = input("Dame una subcadena: ")
     if subcadena == cadena[:len(subcadena)]:
         print("La cadena empieza por la subcadena")
     else:
         print("La cadena no empieza por la subcadena")
-def ejec_10():
+
+#16. Pide una cadena y un carácter por teclado (valida que sea un carácter) y muestra cuantas veces aparece el carácter en la cadena. 
+def ejec_16():
     res = 0
     cadena = input("Dame una cadena: ")
     car = input("Dame un caracter: ")
@@ -91,8 +85,8 @@ def ejec_10():
             if c.upper() == car.upper():
                 res += 1
         print(f"El caracter {car} aparece {res} en la cadena: '{cadena}'")
-
-def ejec_11():
+#17. Suponiendo que hemos introducido una cadena por teclado que representa una frase (palabras separadas por espacios), realiza un programa que cuente cuántas palabras tiene. 
+def ejec_17():
     res = 1
     cadena = input("Dame una cadena: ")
     for car in cadena:
@@ -100,18 +94,19 @@ def ejec_11():
             res += 1
     print(f"La cadena '{cadena}' contiene {res} palabras")
 
-def ejec_12():
+#18. Si tenemos una cadena con un nombre y apellidos, realizar un programa que muestre las iniciales en mayúsculas. 
+def ejec_18():
     cadena = input("Dame una cadena: ")
     for car in range(len(cadena)):
         if cadena[car-1] == " " or car == 0:
            print(cadena[car].upper(),end="")
     print("\n",end="")
-
-def ejec_13():
+#19. Realizar un programa que dada una cadena de caracteres por caracteres, genere otra cadena resultado de invertir la primera. 
+def ejec_19():
     cadena = input("Dame una cadena: ")
     print(cadena[::-1])
-
-def ejec_14():
+#20. Pide una cadena y dos caracteres por teclado (valida que sea un carácter), sustituye la aparición del primer carácter en la cadena por el segundo carácter. 
+def ejec_20():
     res = ""
     cadena = input("Dame una cadena: ")
     car1 = input("Dame un caracter: ")
@@ -126,11 +121,13 @@ def ejec_14():
                 res += c
         print(f"{res}")
 
-def ejec_15():
+#21. Realizar un programa que lea una cadena por teclado y convierta las mayúsculas a minúsculas y viceversa. 
+def ejec_21():
     cadena = input("Dame una cadena: ")
     print(cadena.swapcase())
 
-def ejec_16():
+#22. Realizar un programa que compruebe si una cadena contiene una subcadena. Las dos cadenas se introducen por teclado. 
+def ejec_22():
     cadena = input("Dame una cadena: ")
     subcadena = input("Dame una subcadena: ")
     if subcadena in cadena:
@@ -138,14 +135,16 @@ def ejec_16():
     else:
         print("La subcadena no pertenece a la cadena")
 
-def ejec_17():
+#23. Introducir una cadena de caracteres e indicar si es un palíndromo. Una palabra palíndroma es aquella que se lee igual adelante que atrás.
+def ejec_23():
     cadena = input("Dame una palabra: ")
     if cadena == cadena[::-1]:
         print("Es palindromo")
     else:
         print("No es palindromo")
 
-def ejec_18():
+#24. Validar una contraseña
+def ejec_24():
     num = 0
     up = 0 
     contrasena = input("Dame una contraseña: ") 
