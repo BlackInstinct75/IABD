@@ -1,0 +1,40 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Practica 1 - Instalación y configuración de Lubuntu 26.04.1}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Instalación de la ISO de Lubuntu}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Creación de la maquina virtual}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Proceso de instalación}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Preparación del sistema operativo}{4}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Practica 2 - Preparación del entorno, instalación y configuración de Apache NiFi}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Instalación de JDK}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Creación de las variables de entorno de JAVA}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Instalacion de Nifi}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Creación de las variables de entorno de Nifi}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Arranque de Nifi y configuración}{4}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Practica 3 - Practicando el manejo de ficheros}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Practicando el manejo de ficheros}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Una subsección}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Una subsección}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Una subsección}{4}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Una subsección}{4}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Una subsección}{4}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Practica 4 - Practicando con plantillas (grupos de procesos)}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Una subsección}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Una subsección}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Una subsección}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Una subsección}{4}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Una subsección}{4}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Una subsección}{4}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Practica 5 - Practicando con grupos de procesos}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Una subsección}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Una subsección}{4}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Una subsección}{4}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Una subsección}{4}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Una subsección}{4}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Una subsección}{4}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Practica 6 - Practicando la ingesta de datos en Batch}{4}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Una subsección}{4}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Una subsección}{4}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Una subsección}{4}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Una subsección}{4}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Una subsección}{4}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Una subsección}{4}{subsection.6.6}%
