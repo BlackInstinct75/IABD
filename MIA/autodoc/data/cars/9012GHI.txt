@@ -1,0 +1,5 @@
+Title: Volkswagen Golf GTI 2.0 TSI
+Plate: 9012GHI
+ImageURL: /data/images/9012GHI.png
+---
+Draft:

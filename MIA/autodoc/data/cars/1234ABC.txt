@@ -1,0 +1,6 @@
+Title: SEAT León 1.6 TDI
+Plate: 1234ABC
+ImageURL: /data/images/1234ABC.png
+---
+Draft:
+Cambio de correa de distribución por desgaste. Ajuste de tensión. Prueba en vacío OK
