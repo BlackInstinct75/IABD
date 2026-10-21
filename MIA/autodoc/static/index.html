@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDoc - Fichas de intervención</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">AutoDoc</h1>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Left Column: Car List -->
+            <aside class="car-list-section">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-wrapper">
+                    </div>
+
+                    <!-- Import Car Button -->
+                    <label for="importFile" class="btn-primary">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                        Añadir coche
+                    </label>
+                    <input type="file" id="importFile" accept=".txt" style="display: none;">
+                </div>
+
+                <!-- Car List -->
+                <div id="carList" class="car-list">
+                    <!-- Cars will be loaded here dynamically -->
+                    <div class="loading-message">Cargando coches...</div>
+                </div>
+            </aside>
+
+            <!-- Right Column: Car Detail -->
+            <section class="car-detail-section">
+                <div id="carDetail" class="car-detail">
+                    <!-- Empty State -->
+                    <div id="emptyState" class="empty-state">
+                        <svg class="empty-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <p>Selecciona un coche de la lista para ver sus detalles</p>
+                    </div>
+
+                    <!-- Car Detail Content (hidden by default) -->
+                    <div id="detailContent" class="detail-content" style="display: none;">
+                        <!-- Car Image -->
+                        <div class="car-image-container">
+                            <img id="carImage" class="car-image" src="/data/images/placeholder.jpg" alt="Imagen del coche">
+                        </div>
+
+                        <!-- Car Info -->
+                        <div class="car-info">
+                            <h2 id="carTitle" class="car-title">-</h2>
+                            <p id="carPlate" class="car-plate">Matrícula: -</p>
+                        </div>
+
+                        <!-- Draft Editor -->
+                        <div class="draft-section">
+                            <textarea
+                                id="draftTextarea"
+                                class="draft-textarea"
+                                rows="6"
+                                placeholder="Escribe aquí las anotaciones de vehículo..."
+                            ></textarea>
+                            <button id="saveDraftBtn" class="btn-primary">
+                                <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path>
+                                </svg>
+                                Guardar
+                            </button>
+                            <div id="saveMessage" class="message" style="display: none;"></div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Prototipo educativo para del módulo Modelos de Inteligencia Artificial. IES Rafael Alberti.</p>
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

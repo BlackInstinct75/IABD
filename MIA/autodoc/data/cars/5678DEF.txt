@@ -1,0 +1,6 @@
+Title: Renault Clio 0.9 TCe
+Plate: 5678DEF
+ImageURL: /data/images/5678DEF.png
+---
+Draft:
+Revisión de fuga leve en cárter. Limpieza y reapriete. Sin goteo tras observación.
