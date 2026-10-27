@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "cliente": "Constructora Mediterráneo S.L.",
+    "consulta": "Estamos planificando un edificio residencial de 6 plantas en zona climática D3. Necesitamos saber cuál es el espesor mínimo de aislamiento térmico requerido para las fachadas según el CTE. ¿Nos podríais confirmar los valores exactos?",
+    "status": "pendiente",
+    "fecha_creacion": "2024-01-15T09:30:00",
+    "respuesta": null,
+    "fecha_respuesta": null
+  },
+  {
+    "id": 2,
+    "cliente": "Arquitectos Gómez y Asociados",
+    "consulta": "Tenemos dudas sobre la resistencia al fuego de un forjado en un edificio de uso administrativo de 4 plantas. ¿Cuál es la clasificación REI mínima exigida? Además, ¿hay diferencias si una de las plantas es sótano de aparcamiento?",
+    "status": "pendiente",
+    "fecha_creacion": "2024-01-16T11:15:00",
+    "respuesta": null,
+    "fecha_respuesta": null
+  },
+  {
+    "id": 3,
+    "cliente": "Promociones Urbanas del Sur",
+    "consulta": "En un proyecto de viviendas unifamiliares, ¿es obligatorio instalar sistemas de ventilación mecánica en los baños que no tienen ventana al exterior? ¿Qué caudales mínimos debemos garantizar según normativa?",
+    "status": "pendiente",
+    "fecha_creacion": "2024-01-16T14:45:00",
+    "respuesta": null,
+    "fecha_respuesta": null
+  },
+  {
+    "id": 4,
+    "cliente": "IngenierIa Técnica Andaluza",
+    "consulta": "Necesitamos confirmar las dimensiones mínimas para una escalera de evacuación en un edificio de uso público (centro comercial). Específicamente: ancho mínimo, huella y contrahuella. Gracias.",
+    "status": "en-proceso",
+    "fecha_creacion": "2024-01-17T10:00:00",
+    "respuesta": null,
+    "fecha_respuesta": null
+  },
+  {
+    "id": 5,
+    "cliente": "Reformas Integrales Sevilla",
+    "consulta": "Vamos a rehabilitar un edificio antiguo y queremos saber si es obligatorio mejorar el aislamiento acústico entre viviendas. El edificio es de 1975 y no cumple con la normativa actual. ¿Hay alguna exención por ser rehabilitación?",
+    "status": "pendiente",
+    "fecha_creacion": "2024-01-17T15:20:00",
+    "respuesta": null,
+    "fecha_respuesta": null
+  },
+  {
+    "id": 6,
+    "cliente": "Constructora Bahía",
+    "consulta": "¿Cuál es la pendiente máxima permitida para rampas accesibles en edificios de uso público? Tenemos un desnivel de 90cm y queremos saber la longitud mínima de rampa necesaria.",
+    "status": "resuelto",
+    "fecha_creacion": "2024-01-10T09:00:00",
+    "respuesta": "Según el DB-SUA (artículo 4.1), en las rampas accesibles la pendiente máxima depende de la longitud de cada tramo:\n\n- Tramos de hasta 3 m: 10%\n- Tramos de 3 a 6 m: 8%\n- Tramos de 6 a 9 m: 6%\n- Tramos de más de 9 m: 4%\n\nAdemás, ningún tramo puede superar los 9 m sin descansillo, y cada descansillo debe medir al menos 1,50 m (artículo 4.3).\n\nPara salvar vuestros 90 cm no basta con un solo tramo: al 10% necesitaríais 9 m, pero esa pendiente solo se admite en tramos de hasta 3 m. La solución más corta es dividir la rampa en tres tramos de 3 m al 10% (cada uno salva 30 cm), con dos descansillos de 1,50 m entre ellos. En total, 9 m de rampa y 3 m de descansillos: 12 m.\n\nOtras opciones válidas son dos tramos de 5,63 m al 8% con un descansillo (12,75 m en total) o pendientes más suaves, que alargan la rampa.\n\nRecordad también que, al superar el desnivel los 55 cm, la rampa necesita pasamanos en ambos lados, a una altura de entre 90 y 110 cm (artículo 4.4), y que su anchura mínima debe ser de 1,20 m por ser accesible (artículo 4.2).",
+    "fecha_respuesta": "2024-01-11T10:30:00"
+  },
+  {
+    "id": 7,
+    "cliente": "Estudio de Arquitectura López",
+    "consulta": "Cliente con un local comercial en planta baja pregunta si necesita instalar un aseo adaptado para personas con movilidad reducida. El local tiene 80m2 y está destinado a tienda de ropa. ¿Es obligatorio?",
+    "status": "resuelto",
+    "fecha_creacion": "2024-01-12T11:30:00",
+    "respuesta": "Según el DB-SUA (artículo 15.1), en los edificios de uso público que dispongan de aseos, al menos un aseo de cada 10 o fracción debe ser accesible. El documento no fija ninguna superficie mínima del local a partir de la cual sea obligatorio.\n\nPor tanto, la respuesta depende de si la tienda tiene aseos de uso público:\n\n- Si los tiene, al menos uno debe ser accesible (con menos de 10 aseos, basta con uno).\n- Si no los tiene, este artículo no obliga a instalarlo.\n\nEl aseo accesible debe tener un espacio libre de giro de 1,50 m de diámetro, un espacio de transferencia lateral al inodoro de 0,80 m de anchura, barras de apoyo abatibles, lavabo sin pedestal y mecanismos a una altura de entre 0,70 y 1,20 m (artículos 15.2 y 15.3).\n\nOs recomiendo consultar también la normativa de accesibilidad de vuestra comunidad autónoma y las ordenanzas del ayuntamiento, que pueden ser más exigentes.",
+    "fecha_respuesta": "2024-01-13T09:15:00"
+  },
+  {
+    "id": 8,
+    "cliente": "Arquitectura Sostenible Plus",
+    "consulta": "¿Qué certificado energético mínimo debe tener un edificio de nueva construcción destinado a viviendas? ¿Varía según la zona climática? Nuestro proyecto está en Almería.",
+    "status": "pendiente",
+    "fecha_creacion": "2024-01-18T08:45:00",
+    "respuesta": null,
+    "fecha_respuesta": null
+  },
+  {
+    "id": 9,
+    "cliente": "Proyectos de Ingeniería del Norte",
+    "consulta": "Estamos diseñando la instalación contra incendios de un edificio de oficinas de 8 plantas. ¿A partir de qué altura es obligatorio instalar columna seca? ¿Y sistemas de extinción automática?",
+    "status": "pendiente",
+    "fecha_creacion": "2024-01-18T12:00:00",
+    "respuesta": null,
+    "fecha_respuesta": null
+  },
+  {
+    "id": 10,
+    "cliente": "Construcciones Martínez Hermanos",
+    "consulta": "Vamos a construir viviendas adosadas con garaje en sótano. ¿Es necesario instalar sistema de detección de CO en el garaje? ¿Qué requisitos de ventilación tiene que cumplir?",
+    "status": "en-proceso",
+    "fecha_creacion": "2024-01-19T10:30:00",
+    "respuesta": null,
+    "fecha_respuesta": null
+  },
+  {
+    "id": 11,
+    "cliente": "Reformas Express Barcelona",
+    "consulta": "Un cliente quiere cerrar una terraza de 15m2 en un piso. ¿Necesita licencia de obras? ¿Tiene que cumplir algún requisito especial de aislamiento o seguridad?",
+    "status": "resuelto",
+    "fecha_creacion": "2024-01-08T14:20:00",
+    "respuesta": "Cerrar una terraza es considerado un cambio en la envolvente del edificio, por lo que SÍ requiere licencia de obras mayor en la mayoría de los municipios. Los pasos a seguir son:\n\n1. Comprobar que las ordenanzas municipales y estatutos de la comunidad lo permiten\n2. Solicitar licencia de obras en el Ayuntamiento con proyecto firmado por técnico competente\n3. Cumplir con el CTE en cuanto a:\n   - DB-HE: Aislamiento térmico adecuado para la zona climática (artículo 3)\n   - DB-HE: Carpinterías con permeabilidad al aire clase 2 o superior (artículo 4.3)\n   - DB-SE-AE: Resistencia al viento de las carpinterías\n\nAdemás, al cerrar la terraza:\n- Cambia la superficie construida del inmueble (puede afectar al IBI)\n- Puede cambiar la calificación energética\n- Hay que actualizar el catastro\n\nMi recomendación: No hacerlo sin licencia. Las sanciones pueden ser muy elevadas y el ayuntamiento puede ordenar derribar lo construido.",
+    "fecha_respuesta": "2024-01-09T16:45:00"
+  },
+  {
+    "id": 12,
+    "cliente": "Desarrollos Inmobiliarios Costa",
+    "consulta": "¿Cuál es la superficie mínima exigible para un dormitorio en viviendas de nueva construcción? ¿Y para un baño completo?",
+    "status": "pendiente",
+    "fecha_creacion": "2024-01-19T16:00:00",
+    "respuesta": null,
+    "fecha_respuesta": null
+  },
+  {
+    "id": 13,
+    "cliente": "Estudio Arquitectura Castellana",
+    "consulta": "Proyectamos un bloque de viviendas en Burgos. ¿Qué valor de transmitancia no pueden superar los muros exteriores? ¿Cuántos centímetros de aislante suelen hacer falta para cumplirlo?",
+    "status": "resuelto",
+    "fecha_creacion": "2023-12-04T10:15:00",
+    "respuesta": "Burgos está en la zona climática D. Según el DB-HE (artículo 3.1), la transmitancia térmica de los muros de fachada en zona D no puede superar U ≤ 0,75 W/m²K.\n\nEl propio documento indica como referencia, para la zona D3, entre 6 y 8 cm de poliestireno expandido (EPS) o un aislante equivalente. El espesor exacto depende de la solución constructiva completa del muro, así que conviene calcular la transmitancia del cerramiento que vayáis a usar.\n\nRecordad que también se limitan las transmitancias de cubiertas (U ≤ 0,50 W/m²K en zona D) y suelos (U ≤ 0,50 W/m²K en zona D).",
+    "fecha_respuesta": "2023-12-05T12:40:00"
+  },
+  {
+    "id": 14,
+    "cliente": "Oficinas Técnicas Levante",
+    "consulta": "Edificio de oficinas con una altura de evacuación de 30 metros. ¿Estamos obligados a poner columna seca? ¿Y detección automática de incendios?",
+    "status": "resuelto",
+    "fecha_creacion": "2023-11-20T09:30:00",
+    "respuesta": "Según el DB-SI (artículo 9.3), la columna seca es obligatoria en edificios cuya altura de evacuación supere los 24 metros. Con 30 metros, sí es obligatoria, con la toma de agua en una fachada accesible a los bomberos.\n\nEn cuanto a la detección y alarma (artículo 9.4), en uso Administrativo es obligatoria cuando la superficie construida supera los 2.000 m². Necesitaríamos la superficie del edificio para confirmarlo.\n\nLos extintores son obligatorios en todos los edificios (artículo 9.1), con un recorrido máximo de 15 m hasta cada uno.",
+    "fecha_respuesta": "2023-11-21T16:05:00"
+  },
+  {
+    "id": 15,
+    "cliente": "Viviendas del Guadalquivir",
+    "consulta": "En unos pisos que estamos reformando hay aseos interiores, sin ninguna ventana. ¿Qué tipo de ventilación tenemos que dejar instalada?",
+    "status": "resuelto",
+    "fecha_creacion": "2023-12-11T13:00:00",
+    "respuesta": "Según el DB-HS (artículo 8), en baños y aseos sin ventana al exterior hay que instalar una de estas soluciones:\n\n- Extracción mecánica con un caudal mínimo de 15 l/s (54 m³/h).\n- Un sistema de admisión y extracción mecánica (ventilación forzada).\n\nEl sistema puede funcionar de forma automática o manual, con extracción durante al menos 15 minutos. Como alternativa, se admite un conducto de ventilación natural de sección mínima 125 cm² con tiro térmico garantizado.",
+    "fecha_respuesta": "2023-12-12T10:20:00"
+  }
+]

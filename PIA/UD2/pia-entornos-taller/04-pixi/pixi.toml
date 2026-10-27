@@ -1,0 +1,14 @@
+[workspace]
+authors = ["BlackInstinct75 <franciscoborge249@gmail.com>"]
+channels = ["conda-forge"]
+name = "04-pixi"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+analizar = "python analisis.py"
+
+[dependencies]
+python = "3.12.*"
+pandas = ">=2.2,<3"
+rich = ">=15.0.0,<16"
