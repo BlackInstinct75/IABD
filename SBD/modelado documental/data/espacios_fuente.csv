@@ -1,0 +1,10 @@
+space_id,location_id,location_city,space_type,capacity
+NX-MAD-MR-01,NX-MAD,Madrid,meeting_room,6
+NX-MAD-MR-02,NX-MAD,Madrid,meeting_room,6
+NX-MAD-HD-01,NX-MAD,Madrid,hot_desk,1
+NX-MAD-TR-01,NX-MAD,Madrid,training_room,20
+NX-SEV-MR-01,NX-SEV,Sevilla,meeting_room,6
+NX-SEV-HD-01,NX-SEV,Sevilla,hot_desk,1
+NX-SEV-TR-01,NX-SEV,Sevilla,training_room,20
+NX-LIS-MR-01,NX-LIS,Lisboa,meeting_room,6
+NX-LIS-HD-01,NX-LIS,Lisboa,hot_desk,1

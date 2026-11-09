@@ -1,0 +1,188 @@
+---
+title: "Introducción a R: Fundamentos para Inteligencia Artificial"
+author: "Equipo docente"
+output:
+  html_document: default
+---
+
+Este documento introduce los fundamentos de R para ciencia de datos y análisis. Usa **R base**, sin paquetes externos, y es compatible con RStudio y `knitr`.
+
+Este notebook te introduce a los conceptos fundamentales de R, un lenguaje utilizado frecuentemente en ciencia de datos, estadística y análisis.
+
+Veremos:
+- Variables y tipos de datos
+- Operadores
+- Estructuras de control (`if`, `for`, `while`)
+- Funciones
+- Estructuras de datos básicas (vectores, listas, data frames)
+
+---
+
+## 1. Variables y tipos de datos
+
+```{r variables, echo=TRUE, results="hide", fig.show="hide"}
+nombre <- "Ana"
+edad <- 25
+altura <- 1.65
+es_estudiante <- TRUE
+
+print(nombre)
+print(edad)
+print(altura)
+print(es_estudiante)
+```
+
+## 2. Operadores aritméticos y lógicos
+
+```{r operadores, echo=TRUE, results="hide", fig.show="hide"}
+a <- 10
+b <- 3
+
+a + b   # Suma
+a - b   # Resta
+a * b   # Multiplicación
+a / b   # División
+a %% b  # Módulo
+a ^ b   # Potencia
+
+a > b   # Mayor que
+a == b  # Igualdad
+a != b  # Distinto
+```
+
+## 3. Control de flujo
+
+```{r control-flujo, echo=TRUE, results="hide", fig.show="hide"}
+if (edad >= 18) {
+  print("Mayor de edad")
+} else {
+  print("Menor de edad")
+}
+
+# Bucle for
+for (i in 1:5) {
+  print(i)
+}
+
+# Bucle while
+i <- 1
+while (i <= 5) {
+  print(i)
+  i <- i + 1
+}
+```
+
+## 4. Funciones
+
+```{r funciones, echo=TRUE, results="hide", fig.show="hide"}
+saludar <- function(nombre) {
+  print(paste("Hola", nombre))
+}
+
+saludar("Luis")
+
+cuadrado <- function(x) {
+  return(x^2)
+}
+
+cuadrado(4)
+```
+
+## 5. Estructuras de datos básicas
+
+```{r estructuras, echo=TRUE, results="hide", fig.show="hide"}
+# Vectores
+notas <- c(7, 8, 6)
+print(notas)
+
+# Listas
+persona <- list(nombre="Carlos", edad=30, aprobado=TRUE)
+print(persona)
+
+# Data Frame
+alumnos <- data.frame(
+  nombre = c("Ana", "Luis", "Marta"),
+  nota = c(7, 4, 9)
+)
+print(alumnos)
+
+# Acceso
+alumnos$nota[alumnos$nombre == "Luis"]
+```
+
+## 6. Explorar un `data.frame`
+
+En esta sección aprenderás a inspeccionar rápidamente los primeros y últimos registros y a obtener un resumen estadístico. En R, `head()` y `tail()` cumplen una función parecida a métodos habituales de pandas en Python. No usamos paquetes externos: todo lo que aparece pertenece a R base.
+
+```{r explorar, echo=TRUE, results="hide", fig.show="hide"}
+# Recuperamos el data.frame creado antes
+head(alumnos)
+tail(alumnos)
+summary(alumnos)
+```
+
+`head()` muestra las primeras filas, `tail()` las últimas y `summary()` ofrece un resumen adaptado a cada columna. Puedes indicar cuántas filas quieres ver, por ejemplo `head(alumnos, 2)`.
+
+## 7. Indexación de filas y columnas
+
+Un `data.frame` se puede seleccionar con la forma `[filas, columnas]`: antes de la coma van las filas y después las columnas. Dejar una parte vacía significa “todas”. Esta idea se parece al acceso por filas y columnas de estructuras tabulares en Python.
+
+```{r indexacion, echo=TRUE, results="hide", fig.show="hide"}
+# Filas 1 y 2, todas las columnas
+alumnos[c(1, 2), ]
+
+# Todas las filas, columna 2
+alumnos[, 2]
+
+# Filas 1 y 3, columna "nota"
+alumnos[c(1, 3), "nota"]
+
+# Una fila y varias columnas
+alumnos[2, c("nombre", "nota")]
+```
+
+## 8. Valores ausentes: `NA`
+
+`NA` representa un valor ausente. Para localizarlo usamos `is.na()`, que devuelve `TRUE` donde falta el dato. Al calcular con datos que contienen `NA`, muchas funciones devuelven `NA`; el argumento `na.rm = TRUE` indica que se deben ignorar esos valores.
+
+```{r ausentes, echo=TRUE, results="hide", fig.show="hide"}
+alumnos_con_na <- data.frame(
+  nombre = c("Ana", "Luis", "Marta", "Nora"),
+  nota = c(7, NA, 9, 6)
+)
+
+alumnos_con_na
+is.na(alumnos_con_na)
+is.na(alumnos_con_na$nota)
+alumnos_con_na[is.na(alumnos_con_na$nota), ]
+
+mean(alumnos_con_na$nota)
+mean(alumnos_con_na$nota, na.rm = TRUE)
+```
+
+## 9. Operaciones vectorizadas
+
+Las funciones `mean()`, `sum()` y `max()` pueden trabajar directamente sobre una columna completa, sin escribir un bucle. Esta forma de operar con vectores es una idea importante para el análisis de datos y recuerda a las operaciones sobre columnas de NumPy o pandas en Python.
+
+```{r vectorizadas, echo=TRUE, results="hide", fig.show="hide"}
+notas_validas <- alumnos$nota
+mean(notas_validas)
+sum(notas_validas)
+max(notas_validas)
+
+# Con valores ausentes, indicamos que deben ignorarse
+mean(alumnos_con_na$nota, na.rm = TRUE)
+sum(alumnos_con_na$nota, na.rm = TRUE)
+max(alumnos_con_na$nota, na.rm = TRUE)
+```
+
+## 10. Mini actividad guiada
+
+Trabaja con `alumnos_con_na`, usando solo R base (no instales ni cargues paquetes externos). Completa estos 4 pasos en celdas nuevas y responde a las preguntas con frases breves.
+
+1. Usa `head()` y `summary()` para explorar el data.frame. ¿Cuántas observaciones hay y qué información muestra el resumen de `nota`?
+2. Selecciona con `[filas, columnas]` las filas de alumnado cuya nota está ausente. ¿Qué nombre aparece?
+3. Calcula la media y la suma de `nota` ignorando `NA` con `na.rm = TRUE`. ¿Qué significa que la media no incluya a la persona sin nota?
+4. Calcula la nota máxima. ¿Qué estudiante o estudiantes podrían tenerla? Compruébalo seleccionando las filas correspondientes.
+
+Recuerda: no guardes salidas de ejecución en este notebook.
