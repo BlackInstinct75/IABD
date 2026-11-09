@@ -1,0 +1,16 @@
+name: sbd-lab
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - duckdb>=0.10
+  - duckdb-cli  # opcional, CLI
+  - pandas>=2.1
+  - pyarrow>=15
+  - numpy>=1.26
+  - jupyterlab
+  - ipykernel
+  - pip
+  # Extras opcionales (descomenta cuando los necesites)
+  # - polars>=1.0
+  # - pyspark>=3.5

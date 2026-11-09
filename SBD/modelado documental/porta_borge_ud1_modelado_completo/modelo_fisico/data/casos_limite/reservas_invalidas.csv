@@ -1,0 +1,17 @@
+reservation_id,member_id,member_segment,location_id,space_id,location_city,space_type,start_at,end_at,seats,status,channel,service_items,base_amount,total_amount,created_at
+R001,M001,freelancer,NX-MAD,NX-MAD-MR-01,Madrid,meeting_room,2026-11-03T09:00,2026-11-03T12:00,4,confirmed,web,projector=1,120.00,145.00,2026-10-20T10:15
+INV02,M002,startup,NX-MAD,NX-MAD-MR-02,Madrid,meeting_room,2026-12-01T12:00,2026-12-01T10:00,2,confirmed,web,,60.00,60.00,2026-11-01T09:00
+INV03,M003,enterprise,NX-SEV,NX-SEV-MR-01,Sevilla,meeting_room,2026-12-08T10:00,2026-12-08T12:00,2,archived,web,,70.00,70.00,2026-11-01T09:00
+INV04,M999,startup,NX-MAD,NX-MAD-MR-02,Madrid,meeting_room,2026-12-09T10:00,2026-12-09T12:00,2,confirmed,app,,60.00,60.00,2026-11-01T09:00
+INV05,M004,freelancer,NX-MAD,NX-MAD-XX-99,Madrid,meeting_room,2026-12-13T10:00,2026-12-13T12:00,2,confirmed,app,,60.00,60.00,2026-11-01T09:00
+INV06,M005,student,NX-MAD,NX-MAD-MR-01,Madrid,meeting_room,2026-12-10T10:00,2026-12-10T12:00,2,confirmed,web,jacuzzi=1,60.00,60.00,2026-11-01T09:00
+INV07,M006,startup,NX-MAD,NX-MAD-MR-01,Madrid,meeting_room,2026-12-11T10:00,2026-12-11T12:00,2,confirmed,web,coffee=0,60.00,60.00,2026-11-01T09:00
+INV08,M007,enterprise,NX-MAD,NX-MAD-MR-01,Madrid,meeting_room,2026-11-03T11:00,2026-11-03T14:00,2,confirmed,phone,,90.00,90.00,2026-10-25T09:00
+INV09,M008,enterprise,NX-SEV,NX-SEV-HD-01,Sevilla,hot_desk,2026-12-02T08:00,2026-12-02T16:00,1,confirmed,web,coffee=2,25.00,40.00,2026-11-01T09:00
+INV10,M009,freelancer,NX-SEV,NX-SEV-TR-01,Sevilla,training_room,2026-12-03T09:00,2026-12-03T13:00,25,confirmed,partner,,180.00,180.00,2026-11-01T09:00
+INV11,M010,startup,NX-MAD,NX-MAD-HD-01,Sevilla,hot_desk,2026-12-04T08:00,2026-12-04T16:00,1,confirmed,web,,25.00,25.00,2026-11-01T09:00
+INV12,M011,freelancer,NX-LIS,NX-LIS-MR-01,Lisboa,meeting_room,2026-12-05T09:00,2026-12-05T11:00,2,confirmed,web,,70.00,70.00,2026-12-10T10:00
+INV13,M012,enterprise,NX-LIS,NX-LIS-MR-01,Lisboa,meeting_room,2026-12-06T09:00,2026-12-06T11:00,2,confirmed,fax,,70.00,70.00,2026-11-01T09:00
+INV14,M013,student,NX-LIS,NX-LIS-HD-01,Lisboa,hot_desk,2026-12-07T08:00,2026-12-07T16:00,1,confirmed,web,coffee2,22.00,22.00,2026-11-01T09:00
+INV15,M014,startup,NX-LIS,NX-LIS-MR-01,Lisboa,meeting_room,2026-13-45T25:00,2026-12-14T11:00,2,confirmed,web,,70.00,70.00,2026-11-01T09:00
+INV16,M015,enterprise,NX-LIS,NX-LIS-HD-01,Lisboa,hot_desk,2026-12-12T08:00,2026-12-12T16:00,1,confirmed,web,coffee=1;coffee=2,25.00,35.50,2026-11-01T09:00

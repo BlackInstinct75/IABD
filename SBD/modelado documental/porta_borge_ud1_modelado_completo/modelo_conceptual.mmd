@@ -1,0 +1,46 @@
+%% Modelo conceptual NexoWork (reservas de espacios). Explicación textual en modelo_logico.md §1.
+erDiagram
+    MIEMBRO  ||--o{ RESERVA          : "realiza (1:N)"
+    SEDE     ||--|{ ESPACIO          : "contiene (1:N)"
+    ESPACIO  ||--o{ RESERVA          : "es reservado en (1:N)"
+    RESERVA  ||--o{ RESERVA_SERVICIO : "incluye (1:N)"
+    SERVICIO ||--o{ RESERVA_SERVICIO : "se consume en (1:N)"
+
+    MIEMBRO {
+        string member_id PK
+        string member_segment
+    }
+    SEDE {
+        string location_id PK
+        string location_city
+    }
+    ESPACIO {
+        string space_id PK
+        string location_id FK
+        string space_type
+        int    capacity
+    }
+    RESERVA {
+        string    reservation_id PK
+        string    member_id FK
+        string    space_id FK
+        timestamp start_at
+        timestamp end_at
+        int       seats
+        string    status
+        string    channel
+        decimal   base_amount
+        decimal   total_amount
+        timestamp created_at
+    }
+    SERVICIO {
+        string  service_code PK
+        string  description
+        decimal unit_price
+    }
+    RESERVA_SERVICIO {
+        string  reservation_id PK, FK
+        string  service_code   PK, FK
+        int     quantity
+        decimal unit_price
+    }

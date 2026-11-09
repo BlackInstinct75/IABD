@@ -1,0 +1,5 @@
+rule_id,dimension,description,columns,threshold,before_ratio,after_ratio,delta_pp,incidents_count,decision,notes
+R1,completeness,precio no nulo,precio,0.99,0.987,0.999,1.2,123,impute_median+flag,separador decimal
+R2,uniqueness,clave(fecha,tienda,sku),fecha|tienda|sku,1.00,0.992,1.000,0.8,89,deduplicate keep=first,normaliza SKU
+R3,validity,canal ∈ {tienda,web,app},canal,1.00,0.951,1.000,4.9,430,map values,WEB/online→web
+R4,consistency,importe≈unidades*precio (±2%),importe|unidades|precio,0.98,0.924,0.991,6.7,512,fix types+rounding,float/locale

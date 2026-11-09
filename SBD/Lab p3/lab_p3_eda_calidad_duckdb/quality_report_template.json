@@ -1,0 +1,64 @@
+{
+  "dataset": "",
+  "version": "YYYY_MM_DD",
+  "generated_at": "2025-10-06",
+  "summary": {
+    "rows_before": 0,
+    "rows_after": 0,
+    "cols": 0,
+    "file_sizes_bytes": {
+      "csv": 0,
+      "parquet": 0
+    },
+    "partitions": {
+      "anio": [],
+      "mes": []
+    }
+  },
+  "metrics": {
+    "completeness": {
+      "precio": {
+        "before": 0.0,
+        "after": 0.0,
+        "threshold": 0.99
+      },
+      "unidades": {
+        "before": 0.0,
+        "after": 0.0,
+        "threshold": 0.99
+      }
+    },
+    "uniqueness": {
+      "fecha_tienda_sku": {
+        "before": 0.0,
+        "after": 1.0,
+        "threshold": 1.0
+      }
+    },
+    "validity": {
+      "canal_in_set": {
+        "before": 0.0,
+        "after": 1.0,
+        "threshold": 1.0
+      },
+      "precio_gt_0": {
+        "before": 0.0,
+        "after": 1.0,
+        "threshold": 0.99
+      }
+    },
+    "consistency": {
+      "importe_eq_unidades_x_precio_tol2pct": {
+        "before": 0.0,
+        "after": 0.0,
+        "threshold": 0.98
+      }
+    },
+    "timeliness": {
+      "max_date": "YYYY-MM-DD",
+      "lag_days": 0,
+      "sla": "D+1 10:00"
+    }
+  },
+  "notes": "Añade explicación breve por regla si procede."
+}
