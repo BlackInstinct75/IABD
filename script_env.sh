@@ -9,7 +9,7 @@ echo "Actualizando pip..."
 .env/bin/python -m pip install --upgrade pip
 
 echo "Instalando pandas y numpy..."
-.env/bin/python -m pip install pandas numpy
+.env/bin/python -m pip install pandas numpy matplotlib
 
 echo "Entorno virtual creado correctamente."
 echo "Para activarlo, ejecuta: source .env/bin/activate"

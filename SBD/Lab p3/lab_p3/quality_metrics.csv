@@ -1,0 +1,10 @@
+rule_id,dimension,description,columns,threshold,before_ratio,after_ratio,delta_pp,incidents_before,incidents_after,cumple_despues
+R1,Completitud,precio no nulo,precio,0.99,0.96,1.0,4.0,3459,0,True
+R2,Completitud,unidades no nulo,unidades,0.99,1.0,1.0,0.0,0,0,True
+R3,Completitud,importe no nulo,importe,0.99,0.972,0.9918,1.98,2421,703,True
+R4,Unicidad,sin filas duplicadas exactas,todas,1.0,0.9901,1.0,0.99,856,0,True
+R5,Validez,"canal ∈ {tienda,web,app}",canal,1.0,0.97,1.0,3.0,2596,0,True
+R6,Validez,unidades >= 0,unidades,0.99,0.9917,0.9918,0.01,719,703,True
+R7,Validez,precio > 0,precio,0.99,0.96,1.0,4.0,3459,0,True
+R8,Validez,"fecha en [2024-01-01, 2025-12-31]",fecha,1.0,0.9981,1.0,0.19,161,0,True
+R9,Consistencia,importe ≈ unidades*precio (±2%),"importe,unidades,precio",0.98,0.9917,0.9919,0.01,681,689,True

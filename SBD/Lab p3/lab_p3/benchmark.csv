@@ -1,0 +1,4 @@
+fuente,tamano_KB,Q1 agregado por canal (ms),Q2 top-10 SKU por importe (ms),Q3 filtro mes=7 (poda) (ms)
+CSV crudo (sales_raw.csv),3778.2,35.28,34.58,32.4
+CSV curado,5217.2,73.77,71.86,70.03
+"Parquet curado (anio/mes, zstd)",654.1,3.5,4.4,1.57

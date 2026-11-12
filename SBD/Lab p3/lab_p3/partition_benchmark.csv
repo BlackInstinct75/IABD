@@ -1,0 +1,7 @@
+layout,compresion,ficheros,tamano_KB,q_mes_ms,q_agregado_ms
+sin_particion,snappy,1,623.5,2.12,2.98
+anio_mes,snappy,3,822.6,2.36,3.93
+anio_mes_canal,snappy,9,974.5,2.68,5.9
+sin_particion,zstd,1,558.9,2.47,2.6
+anio_mes,zstd,3,654.1,1.93,3.6
+anio_mes_canal,zstd,9,705.5,2.11,5.13

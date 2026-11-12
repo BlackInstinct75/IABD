@@ -1,0 +1,53 @@
+{
+  "dataset": "sales",
+  "rows_before": 86536,
+  "rows_after": 85519,
+  "rows_quarantine": 1017,
+  "treatment_log": {
+    "precio_coma_recuperados": 1739,
+    "canal_normalizados": 2596,
+    "canal_sin_mapeo": 0,
+    "precio_imputados": 1720,
+    "importe_recalculados": 1702,
+    "importe_inconsistente_etiquetados": 694,
+    "precio_outlier_umbral_iqr": 42.64,
+    "precio_outliers_etiquetados": 2300,
+    "filas_eliminadas_fecha": 161,
+    "filas_eliminadas_duplicado": 856
+  },
+  "metrics_before": {
+    "R1_completitud_precio": 0.9600281963575853,
+    "R2_completitud_unidades": 1.0,
+    "R3_completitud_importe": 0.9720232042155865,
+    "R4_unicidad_fila_completa": 0.9901081630766386,
+    "R5_validez_canal": 0.9700009244707405,
+    "R6_validez_unidades_ge0": 0.9916913192197467,
+    "R7_validez_precio_gt0": 0.9600281963575853,
+    "R8_validez_fecha_rango": 0.9981395026347416,
+    "R9_consistencia_importe": 0.9917340324812468,
+    "_n_R9": 82386.0,
+    "_n": 86536.0
+  },
+  "metrics_after": {
+    "R1_completitud_precio": 1.0,
+    "R2_completitud_unidades": 1.0,
+    "R3_completitud_importe": 0.9917796045323262,
+    "R4_unicidad_fila_completa": 1.0,
+    "R5_validez_canal": 1.0,
+    "R6_validez_unidades_ge0": 0.9917796045323262,
+    "R7_validez_precio_gt0": 1.0,
+    "R8_validez_fecha_rango": 1.0,
+    "R9_consistencia_importe": 0.9918765327296737,
+    "_n_R9": 84816.0,
+    "_n": 85519.0
+  },
+  "timeliness": {
+    "max_date": "2024-08-29",
+    "min_date": "2024-06-01"
+  },
+  "sizes_kb": {
+    "CSV crudo (sales_raw.csv)": 3778.2,
+    "CSV curado": 5217.2,
+    "Parquet curado (anio/mes, zstd)": 654.1
+  }
+}
